@@ -1,0 +1,187 @@
+.backgroundImg
+{
+    height: 94.6vh;
+    width: 100%;
+    background-color: #256D85;
+    color: white;
+}
+.tagline
+{
+    padding-top:12rem;
+    padding-left: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+.taglineBottom
+{
+    padding-top: 2rem;
+    padding-left: 13rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imageField
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightBtn
+{
+    margin-top:8rem;
+}
+.exploreBtn
+{
+    background-color:#06283D;
+    color: white;
+}
+.mainContent
+{
+    background-color: #47edff;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerContent
+{
+    background-color: white;
+    height: 75vh;
+    width: 84%;
+    border: 1px solid #c0aed6;
+    box-shadow: 2px 2px 5px #6b21a8;
+}
+.mainArea
+{
+    height: 97vh;
+    background-color: #14c9c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerArea
+{
+    height: 80vh;
+    width: 80%;
+    background-color: white;
+    border: 1px solid rgb(4, 74, 95);
+    box-shadow: 4px 4px 5px #036671;
+}
+.mainField
+{
+    height: 75vh;
+}
+.inputContent
+{
+    padding: 0;
+    border-right: 1px solid #c0aed6;
+    padding-right: 0.5rem;
+}
+.submitBtn
+{
+    margin: 2rem;
+    background-color:#06283D ;
+    color: white;
+    
+}
+.labelText
+{
+    padding: 1rem;
+}
+.innerBox
+{
+    height: 50vh;
+    margin: 1rem;
+    border: 1px solid #c0aed6;
+}
+.head6
+{
+    margin: 1rem;
+}
+
+.gradient-custom-2 {
+    background: #fccb90;
+    
+    background: -webkit-linear-gradient(to right, #8BBCCC, #4C6793, #5C2E7E, #000000);
+    
+    background: linear-gradient(to right,  #8BBCCC, #4C6793, #5C2E7E, #000000);
+    }
+    
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+
+    .head3
+    {
+        padding: 1rem;
+        text-align: center;
+        color: white;
+        font-family: 'Playfair Display', serif;;
+        text-shadow:0.5px 0.5px #ff0000;
+    }
+
+   
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.fileList
+{
+    background-color: #256D85;
+    height: 100vh;
+}
+
+.viewLink
+{
+    text-decoration: none;
+    color: black;
+}
+
+.fileShow
+{
+    background-color: #256D85;
+    height: 100vh;
+    padding: 3rem;
+}
+
+.showLink
+{
+    text-decoration: none;
+    color: black;
+}
+
+.showEdit
+{
+    background-color:#256D85;
+    height: 100vh;
+}
+.formElement
+{
+    padding: 3rem;
+}
+.updateBtn
+{
+    background-color: #06283D;
+    color: white;
+}
+.summaryPage, .imageconfirmationPage, .fileconfirmationPage
+{
+    background-color: #256D85;
+    color: White;
+    height: 100vh;
+}
+@media screen and (max-width: 1000px) {
+    .imageField
+    {
+        display: none;
+    }
+  }
