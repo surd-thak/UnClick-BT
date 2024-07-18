@@ -1,0 +1,68 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="backgroundImg container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+  <h3 class="tagline text-center">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste soluta qui
+    quod mollitia voluptates consequuntur.
+  </h3>
+  <div class="rightBtn text-center ">
+   
+      <a href="#jump" style="text-decoration: none;"> <button class="exploreBtn btn btn-lg text-center">Explore</button> </a>
+  </div>
+</div>
+  <div class="col-lg-6 imageField">
+
+      <div class="mainImage">
+        <img src="/main.jpg" class="pencilImg" alt="error" />
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="mainArea conatainer-fluid" id="jump">
+  <div class="innerArea container-fluid">
+    <div class="inputArea">
+      <form action="/predict" method="POST">
+        <label for="inputField" class="labelText">Enter text:</label>
+            <textarea
+              class="form-control"
+              placeholder="Enter your text here"
+              id="inputField" name="inputField"
+              style="height: 35vh"
+            ></textarea>
+            <div class="text-center pt-1">
+              <button class="btn  btn-block mb-3 updateBtn" >Submit
+                </button>
+            </div>
+      </form>
+    </div>
+    <div class="text-center my-2">OR</div>
+
+    <div class="row">
+      <div class="col-lg-6">
+      <form action="/filesubmission" method="POST" enctype="multipart/form-data">
+        <label for="formFile" class="form-label">Select file:</label>
+      <input class="form-control" type="file" id="formFile" name="new">
+      <div class="text-center pt-1 pb-1">
+        <button class="btn  btn-block mb-3 updateBtn" >Submit
+          </button>
+      </div>
+      </form>
+    </div>
+    <div class="col-lg-6">
+      <form action="/imagesubmission" method="POST" enctype="multipart/form-data">
+        <label for="img" class="form-label">Select image:</label><br>
+        <input type="file" id="img" name="img" value="img" accept="image/*" class="form-control">
+        <div class="text-center pt-1 pb-1">
+          <button class="btn  btn-block mb-3 updateBtn" >Submit
+            </button>
+        </div>
+      </form>
+    </div>
+    </div>
+
+  
+  </div>
+</div>

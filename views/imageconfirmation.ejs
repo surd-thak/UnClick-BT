@@ -1,0 +1,15 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="imageconfirmationPage">
+    <h3 class="head3">Verify your content</h3>
+    <pre>
+        <%= text %> 
+    </pre>
+    <form action="/predict" method="POST" class="container">
+        <textarea name="inputField" id="inputField" hidden></textarea>
+        <div class="text-center pt-1 mb-5 pb-1">
+            <button class="btn  btn-block mb-3 updateBtn" >Save
+              </button>
+          </div>
+    </form>
+</div>

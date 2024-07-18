@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+<div class="summaryPage">
+<h3 class="head3">Summary</h3>
+<div class="container">
+<p>
+    <%= data %> 
+  </p>
+</div>
+<form action="/summeries" method="POST" class="container">
+<textarea name="body" id="body"  class="summaryText" hidden="hidden">
+    <%= data %> 
+</textarea>
+
+<div class="form-outline mb-4">
+    <input type="text" id="title" name="title" class="form-control" />
+    <label class="form-label" for="title">Title</label>
+  </div>
+  <div class="text-center pt-1 mb-5 pb-1">
+    <button class="btn  btn-block mb-3 updateBtn" >Save
+      </button>
+  </div>
+</form>
+</div>
