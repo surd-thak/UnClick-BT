@@ -1,0 +1,26 @@
+
+<% layout('layouts/boilerplate') %>
+<div class="fileList">
+<h3 class="head3">My files</h3>
+
+<% for(let summery of userSummeries) { %>
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+      <ul class="list-group ">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold"><%= summery.title %> </div>
+          </div>
+          <span class="badge rounded-pill"><span class="material-symbols-outlined" style="color: black;">
+            pageview
+            </span><a href="/summeries/<%= summery._id%>" class="viewLink">View</a></span>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3">
+
+    </div>
+    </div>
+    <% } %> 
+</div>

@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="fileShow container-fluid">
+<div class="row ">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+<div class="card">
+    <h5 class="card-header"><%= summery.title %> </h5>
+    <div class="card-body">
+      <p class="card-text"><%= summery.body %> </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="/summeries/<%= summery._id %>/edit" class="showLink">EDIT</a></li>
+        <li class="list-group-item"><form action="/summeries/<%= summery._id %>?_method=DELETE" method="POST">
+            <button class="btn btn-sm btn-danger">DELETE</button></form></li>
+        <li class="list-group-item"><a href="/summeries/hear?play=<%= summery.body %>&lang=en" class="showLink">PLAY</a></li>
+        <li class="list-group-item"><a href="/summeries/" class="showLink">View all summeries</a></li>
+      </ul>
+  </div>
+</div>
+<div class="col-lg-3"></div>
+</div>
+</div>

@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="showEdit">
+<div class="container formElement">
+<form action="/summeries/<%= summery._id %>?_method=PUT" method="POST">
+    
+    <div class="form-outline mb-4">
+        <input type="text" id="title" name="title" value="<%= summery.title %> " class="form-control" />
+        <label class="form-label" for="title">Title</label>
+      </div>
+
+    <div class="form-outline mb-4">
+        <input type="text" id="body" name="body" value="<%= summery.body %> " class="form-control" />
+        <label class="form-label" for="body">Content</label>
+      </div>
+
+    <div class="text-center pt-1 mb-5 pb-1">
+        <button class="btn  btn-block mb-3 updateBtn" >Update
+          </button>
+      </div>
+</form>
+</div>
+</div>
